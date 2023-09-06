@@ -1,6 +1,6 @@
 #!/bin/bash
 
-Threshold_mem=10
+Threshold_mem=50
 Threshold_cpu=0
 Threshold_dsk=75
 
