@@ -1,10 +1,10 @@
 #!/bin/bash
 
 Threshold_mem=15
-Threshold_cpu=70
-Threshold_dsk=40
+Threshold_cpu=0
+Threshold_dsk=75
 
-#Condition checl
+#Condition check
 bPassed=true
 
 #Memory Check
@@ -29,7 +29,7 @@ fi
 disk_mem=$(df / | tail -1 |awk  '{gsub("%","");print $5}')
 echo 'Disk Mem is'$disk_mem
 if((disk_mem>Threshold_dsk));then
-echo 'Running ou of disk space! Abort execution'
+echo 'Running out of disk space! Abort execution'
 bPassed=false
 fi
 
