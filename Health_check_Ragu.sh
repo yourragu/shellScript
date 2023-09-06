@@ -35,10 +35,10 @@ fi
 
 if($bPassed);then
 echo 'Health check passed....Execution started..'
-bash testAutomatedScript.sh
+#bash testAutomatedScript.sh
 else
-echo 'Health check failed....Execution aborted..Re-booting the instance..please wait'
-aws ec2 reboot-instances --instance-ids i-08e65b1d0b4ca26ce 
+echo 'Health check failed....Execution aborted..................please wait'
+#aws ec2 reboot-instances --instance-ids i-08e65b1d0b4ca26ce 
 fi
 
 
